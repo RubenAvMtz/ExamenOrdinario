@@ -14,12 +14,12 @@ namespace ExamenOrdinario.Interfaces
         }
         public string Nombre
         {
-            get; set;
+            get; set;   
         }
 
         public IMascota ObtenerMascota(IMascota mascota);
 
-        public void ObtenerMascotas(List<IMascota> listaMascotas);
+        public List<IMascota> ObtenerMascotas();
 
         public IMascota ObtenerMascotaPorId(int id);
 

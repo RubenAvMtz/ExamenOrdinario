@@ -14,7 +14,18 @@ namespace ExamenOrdinario.Clases
 
         public int ID => throw new NotImplementedException();
 
-        public string Nombre { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        private string _nombre;
+        public string Nombre
+        {
+            get { return _nombre; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(_nombre){
+                    throw new Exception("El nombre introducido no es valido");
+                    _nombre = value;
+                }
+            }
+        }
 
         public void AcariciarMascota()
         {
@@ -33,7 +44,7 @@ namespace ExamenOrdinario.Clases
 
         public IMascota ObtenerMascota(IMascota mascota)
         {
-            throw new NotImplementedException();
+            return listaMascotas.Find(m => m.Equals(mascota));
         }
 
 
@@ -42,9 +53,10 @@ namespace ExamenOrdinario.Clases
             throw new NotImplementedException();
         }
 
-        public void ObtenerMascotas(List<IMascota> listaMascotas)
+        public List<IMascota> ObtenerMascotas()
         {
-            throw new NotImplementedException();
+            List<IMascota> listaDeMascotas = this.listaMascotas;
+            return listaDeMascotas; 
         }
 
 
