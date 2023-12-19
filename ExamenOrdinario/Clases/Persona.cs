@@ -14,7 +14,18 @@ namespace ExamenOrdinario.Clases
 
         public int ID => throw new NotImplementedException();
 
-        public string Nombre { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        private string _nombre;
+        public string Nombre
+        {
+            get { return _nombre; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(_nombre){
+                    throw new Exception("El nombre introducido no es valido");
+                    _nombre = value;
+                }
+            }
+        }
 
         public void AcariciarMascota()
         {
@@ -45,7 +56,7 @@ namespace ExamenOrdinario.Clases
         public List<IMascota> ObtenerMascotas()
         {
             List<IMascota> listaDeMascotas = this.listaMascotas;
-            return listaDeMascotas;
+            return listaDeMascotas; 
         }
 
 
