@@ -31,11 +31,6 @@ namespace ExamenOrdinario.Clases
             throw new NotImplementedException();
         }
 
-        public void AgregarMascota(IMascota mascota)
-        {   
-            throw new NotImplementedException();
-        }
-
         public IMascota ObtenerMascota(IMascota mascota)
         {
             throw new NotImplementedException();
