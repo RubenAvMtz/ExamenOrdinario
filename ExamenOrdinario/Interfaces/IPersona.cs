@@ -8,10 +8,30 @@ namespace ExamenOrdinario.Interfaces
 {
     public interface IPersona
     {
-        public string ID
+        public int ID
         {
             get; 
         }
+        public string Nombre
+        {
+            get; set;
+        }
+
+        public IMascota ObtenerMascota(IMascota mascota)
+        {
+            return mascota;
+        }
+
+        public void AgregarMascota(IMascota mascota)
+        {
+
+        }
+
+        public void AcariciarMascota()
+        {
+
+        }
+
 
     }
 }
