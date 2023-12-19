@@ -9,7 +9,8 @@ namespace ExamenOrdinario.Clases
 {
     public class Persona : IPersona
     {
-        List<IMascota> listaMascotas;
+
+        private List<IMascota> listaMascotas;
 
         public int ID => throw new NotImplementedException();
 
@@ -26,6 +27,11 @@ namespace ExamenOrdinario.Clases
         }
 
         public void AgregarMascota(IMascota mascota)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AgregarMascota(IMascota mascota)
         {   
             throw new NotImplementedException();
         }
@@ -34,6 +40,7 @@ namespace ExamenOrdinario.Clases
         {
             throw new NotImplementedException();
         }
+
 
         public IMascota ObtenerMascotaPorId(int id)
         {
@@ -44,6 +51,7 @@ namespace ExamenOrdinario.Clases
         {
             throw new NotImplementedException();
         }
+
 
         public Persona(string nombre)
         {

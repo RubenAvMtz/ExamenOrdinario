@@ -1,4 +1,5 @@
-﻿using ExamenOrdinario.Interfaces;
+﻿using ExamenOrdinario.Clases;
+using ExamenOrdinario.Interfaces;
 
 namespace ExamenOrdinario
 {
@@ -95,10 +96,23 @@ namespace ExamenOrdinario
                         }
                         break;
                     case 2:
+                        Console.WriteLine("Ingresa el nombre de la persona:");
+                        string nuevoNombre = Console.ReadLine();
+                        listaPersonas.Add(new Persona(nuevoNombre));
                         break;
                     case 3:
+                        Console.WriteLine("Ingrese el nombre del usuario:");
+                        string nombreIngresado = Console.ReadLine();
+                        foreach(var persona in listaPersonas)
+                        {
+                            if(persona.Nombre == nombreIngresado)
+                            {
+                                Console.WriteLine($"{persona.ID} - {persona.Nombre}");
+                            }
+                        }
                         break;
                     case 4:
+
                         break;
                     case 5:
                         continuarMCAP = false;
