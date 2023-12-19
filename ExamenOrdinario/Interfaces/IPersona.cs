@@ -23,6 +23,8 @@ namespace ExamenOrdinario.Interfaces
 
         public void AcariciarMascota();
 
+        public void AcariciarMascotas();
+
 
     }
 }
