@@ -24,6 +24,11 @@ namespace ExamenOrdinario.Interfaces
         {
             get; set;
         }
+        public string Especie
+        {
+            get; set;
+        }
+
 
 
     }
