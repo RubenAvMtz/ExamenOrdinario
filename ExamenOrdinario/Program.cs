@@ -55,6 +55,7 @@
                         MenuCentroAdministracionMascotas();
                         break;
                     case 3:
+                        continuarMAC = false;
                         break;
                     default:
                         Console.WriteLine("Opcion invalida");
@@ -85,6 +86,7 @@
                     case 4:
                         break;
                     case 5:
+                        continuarMCAP = false;
                         break;
                     default:
                         Console.WriteLine("Opcion invalida");
@@ -116,6 +118,7 @@
                     case 4:
                         break;
                     case 5:
+                        continuarMCAM = false;
                         break;
                     default:
                         Console.WriteLine("Opcion invalida");
@@ -140,6 +143,7 @@
                     case 2:
                         break;
                     case 3:
+                        continuarMAA = false;
                         break;
                     default:
                         Console.WriteLine("Opcion invalida");
@@ -165,6 +169,7 @@
                     case 2:
                         break;
                     case 3:
+                        continuarMABA = false;
                         break;
                     default:
                         Console.WriteLine("Opcion invalida");
