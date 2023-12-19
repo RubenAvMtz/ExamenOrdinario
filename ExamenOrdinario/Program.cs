@@ -26,6 +26,7 @@
                         MenuAdministracionBienestarAnimal();
                         break;
                     case 4:
+                        SimulacionInteracciones();
                         break;
                     case 5:
                         continuarPrograma = false;
@@ -176,6 +177,11 @@
                         break;
                 }
             }
+
+        }
+
+        static void SimulacionInteracciones()
+        {
 
         }
     }
