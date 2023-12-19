@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExamenOrdinario.Enumeradores;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,11 +21,11 @@ namespace ExamenOrdinario.Interfaces
         {
             get;
         }
-        public string Temperamento
+        public TemperamentoEnum Temperamento
         {
             get; set;
         }
-        public string Especie
+        public EspeciesEnum Especie
         {
             get; set;
         }
