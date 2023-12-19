@@ -33,7 +33,7 @@ namespace ExamenOrdinario.Clases
 
         public IMascota ObtenerMascota(IMascota mascota)
         {
-            throw new NotImplementedException();
+            return listaMascotas.Find(m => m.Equals(mascota));
         }
 
 
@@ -42,9 +42,10 @@ namespace ExamenOrdinario.Clases
             throw new NotImplementedException();
         }
 
-        public void ObtenerMascotas(List<IMascota> listaMascotas)
+        public List<IMascota> ObtenerMascotas()
         {
-            throw new NotImplementedException();
+            List<IMascota> listaDeMascotas = this.listaMascotas;
+            return listaDeMascotas;
         }
 
 
