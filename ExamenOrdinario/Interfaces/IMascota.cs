@@ -33,6 +33,11 @@ namespace ExamenOrdinario.Interfaces
             get; set;
         }
 
+        public void HacerRuido()
+        {
+
+        }
+
 
 
     }
