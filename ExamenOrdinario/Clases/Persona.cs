@@ -9,7 +9,8 @@ namespace ExamenOrdinario.Clases
 {
     public class Persona : IPersona
     {
-        
+        List<IMascota> listaMascotas;
+
         public int ID => throw new NotImplementedException();
 
         public string Nombre { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
