@@ -18,6 +18,11 @@ namespace ExamenOrdinario.Clases
             throw new NotImplementedException();
         }
 
+        public void AcariciarMascotas()
+        {
+            throw new NotImplementedException();
+        }
+
         public void AgregarMascota(IMascota mascota)
         {
             throw new NotImplementedException();
