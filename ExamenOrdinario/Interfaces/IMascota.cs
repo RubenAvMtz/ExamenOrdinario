@@ -34,15 +34,9 @@ namespace ExamenOrdinario.Interfaces
             get; set;
         }
 
-        public void HacerRuido()
-        {
+        public void HacerRuido();
 
-        }
-
-        public void CambiarDueno(IPersona persona)
-        {
-
-        }
+        public void CambiarDueno(IPersona persona);
 
 
 

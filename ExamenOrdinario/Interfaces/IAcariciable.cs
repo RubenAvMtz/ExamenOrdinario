@@ -8,9 +8,6 @@ namespace ExamenOrdinario.Interfaces
 {
     public interface IAcariciable
     {
-        public void ResponderCaricia()
-        {
-
-        }
+        public void ResponderCaricia();
     }
 }

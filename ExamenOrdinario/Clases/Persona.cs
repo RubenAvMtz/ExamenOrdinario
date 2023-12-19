@@ -12,5 +12,20 @@ namespace ExamenOrdinario.Clases
         public int ID => throw new NotImplementedException();
 
         public string Nombre { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public void AcariciarMascota()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AgregarMascota(IMascota mascota)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IMascota ObtenerMascota(IMascota mascota)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

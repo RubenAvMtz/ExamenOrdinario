@@ -19,5 +19,20 @@ namespace ExamenOrdinario.Clases
         public TemperamentoEnum Temperamento { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public EspeciesEnum Especie { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public IPersona persona { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public void CambiarDueno(IPersona persona)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void HacerRuido()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ResponderCaricia()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

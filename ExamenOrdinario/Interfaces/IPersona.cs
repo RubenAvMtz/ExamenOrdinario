@@ -17,20 +17,11 @@ namespace ExamenOrdinario.Interfaces
             get; set;
         }
 
-        public IMascota ObtenerMascota(IMascota mascota)
-        {
-            return mascota;
-        }
+        public IMascota ObtenerMascota(IMascota mascota);
 
-        public void AgregarMascota(IMascota mascota)
-        {
+        public void AgregarMascota(IMascota mascota);
 
-        }
-
-        public void AcariciarMascota()
-        {
-
-        }
+        public void AcariciarMascota();
 
 
     }
