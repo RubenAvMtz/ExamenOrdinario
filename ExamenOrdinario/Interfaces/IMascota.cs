@@ -28,6 +28,10 @@ namespace ExamenOrdinario.Interfaces
         {
             get; set;
         }
+        public IPersona persona
+        {
+            get; set;
+        }
 
 
 
