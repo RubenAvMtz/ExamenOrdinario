@@ -20,8 +20,10 @@
                         MenuAdministacionCentro();
                         break;
                     case 2:
+                        MenuAdministracionAdopciones();
                         break;
                     case 3:
+                        MenuAdministracionBienestarAnimal();
                         break;
                     case 4:
                         break;
@@ -120,6 +122,56 @@
                         break;
                 }
             }
+        }
+
+        static void MenuAdministracionAdopciones()
+        {
+            bool continuarMAA = true; // MAA = Menu Adminsitración Adopciones
+            while (continuarMAA)
+            {
+                Console.WriteLine("1 - Ver mascotas disponibles para adoptar");
+                Console.WriteLine("2 - Adoptar mascota");
+                Console.WriteLine("3 - Regresar al menú anterior");
+                int opcionSeleccionadaMAA = int.Parse(Console.ReadLine());
+                switch(opcionSeleccionadaMAA)
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    default:
+                        Console.WriteLine("Opcion invalida");
+                        break;
+                }
+            }
+            
+        }
+
+        static void MenuAdministracionBienestarAnimal()
+        {
+            bool continuarMABA = true; // MABA = Menu Administración Bienestar Animal
+            while (continuarMABA)
+            {
+                Console.WriteLine("1 - Servicio de spa");
+                Console.WriteLine("2 - Corte de pelo");
+                Console.WriteLine("3 - Regresar al menú anterior");
+                int opcionSeleccionadaMABA = int.Parse(Console.ReadLine());
+                switch (opcionSeleccionadaMABA)
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    default:
+                        Console.WriteLine("Opcion invalida");
+                        break;
+                }
+            }
+
         }
     }
 }
