@@ -40,6 +40,11 @@ namespace ExamenOrdinario.Clases
             throw new NotImplementedException();
         }
 
+        public void ObtenerMascotas(List<IMascota> listaMascotas)
+        {
+            throw new NotImplementedException();
+        }
+
         public Persona(string nombre)
         {
             throw new NotImplementedException();
