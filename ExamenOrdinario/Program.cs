@@ -1,7 +1,10 @@
-﻿namespace ExamenOrdinario
+﻿using ExamenOrdinario.Interfaces;
+
+namespace ExamenOrdinario
 {
     internal class Program
     {
+        static List<IPersona> listaPersonas = new List<IPersona>();
         static void Main(string[] args)
         {
             bool continuarPrograma = true;
@@ -79,6 +82,17 @@
                 switch (opcionSeleccionadaMCAP)
                 {
                     case 1:
+                        if(listaPersonas.Count == 0)
+                        {
+                            Console.WriteLine("No hay personas registradas.");
+                        }
+                        else
+                        {
+                            foreach(var persona in listaPersonas)
+                            {
+                                Console.WriteLine($"{persona.ID} - {persona.Nombre}");
+                            }
+                        }
                         break;
                     case 2:
                         break;
