@@ -12,6 +12,11 @@ namespace ExamenOrdinario.Interfaces
         {
             get;
         }
+        public string Name
+        {
+            get; set;
+        }
+
 
 
     }
