@@ -29,5 +29,10 @@ namespace ExamenOrdinario.Clases
         {
             throw new NotImplementedException();
         }
+
+        public void ResponderCaricia()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
