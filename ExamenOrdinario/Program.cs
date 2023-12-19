@@ -139,6 +139,7 @@ namespace ExamenOrdinario
                 switch (opcionSeleccionadaMCAM)
                 {
                     case 1:
+                        SimulacionInteracciones();
                         break;
                     case 2:
                         break;
@@ -210,7 +211,10 @@ namespace ExamenOrdinario
 
         static void SimulacionInteracciones()
         {
-
+            foreach(var persona in listaPersonas)
+            {
+                //Terminar
+            }
         }
     }
 }

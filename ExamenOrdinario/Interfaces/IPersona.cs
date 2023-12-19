@@ -19,6 +19,10 @@ namespace ExamenOrdinario.Interfaces
 
         public IMascota ObtenerMascota(IMascota mascota);
 
+        public void ObtenerMascotas(List<IMascota> listaMascotas);
+
+        public IMascota ObtenerMascotaPorId(int id);
+
         public void AgregarMascota(IMascota mascota);
 
         public void AcariciarMascota();
