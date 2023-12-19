@@ -28,7 +28,14 @@ namespace ExamenOrdinario.Clases
         public int Edad
         {
             get { return _edad; }
-            set { _edad = value; }
+            set 
+            {
+                if( value > 14)
+                {
+                    throw new Exception("La edad del perro debe ser menor a 14");
+                }
+                _edad = value; 
+            }
         }
 
         private TemperamentoEnum _temperamento;
@@ -54,17 +61,28 @@ namespace ExamenOrdinario.Clases
 
         public void CambiarDueno(IPersona persona)
         {
-            throw new NotImplementedException();
+            this.Persona = persona;
+            Console.WriteLine($"{this.Name} ha cambiado de dueño a {persona.Nombre}");
         }
 
         public void HacerRuido()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{this.Name} hace guau guau");
         }
 
         public void ResponderCaricia()
         {
             throw new NotImplementedException();
+        }
+
+        public void MoverLaCola()
+        {
+            Console.WriteLine($"{this.Name} está moviendo la cola");
+        }
+
+        public void Grunir()
+        {
+            Console.WriteLine($"{this.Name} está gruñendo");
         }
     }
 }
