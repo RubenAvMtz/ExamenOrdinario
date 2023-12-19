@@ -38,6 +38,11 @@ namespace ExamenOrdinario.Interfaces
 
         }
 
+        public void CambiarDueno(IPersona persona)
+        {
+
+        }
+
 
 
     }
