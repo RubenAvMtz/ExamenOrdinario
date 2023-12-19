@@ -10,29 +10,79 @@ namespace ExamenOrdinario.Clases
 {
     public class Perro : IMascota, IAcariciable
     {
-        public string ID => throw new NotImplementedException();
+        private string _id;
+        public string ID
+        {
+            get { return _id; }
+            private set { _id = value; }
+        }
 
-        public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        private string _name;
+        public string Name 
+        {
+            get { return _name; }
+            set { _name = value; }
+        }
 
-        public int Edad => throw new NotImplementedException();
+        private int _edad;
+        public int Edad
+        {
+            get { return _edad; }
+            set 
+            {
+                if( value > 14)
+                {
+                    throw new Exception("La edad del perro debe ser menor a 14");
+                }
+                _edad = value; 
+            }
+        }
 
-        public TemperamentoEnum Temperamento { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public EspeciesEnum Especie { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public IPersona persona { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        private TemperamentoEnum _temperamento;
+        public TemperamentoEnum Temperamento
+        {
+            get { return _temperamento; }
+            set { _temperamento = value; }
+        }
+
+        private EspeciesEnum _especie;
+        public EspeciesEnum Especie
+        {
+            get { return _especie; }
+            set { _especie = value; }
+        }
+
+        private IPersona _persona;
+        public IPersona Persona
+        {
+            get { return _persona; }
+            set { _persona = value; }
+        }
 
         public void CambiarDueno(IPersona persona)
         {
-            throw new NotImplementedException();
+            this.Persona = persona;
+            Console.WriteLine($"{this.Name} ha cambiado de dueño a {persona.Nombre}");
         }
 
         public void HacerRuido()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{this.Name} hace guau guau");
         }
 
         public void ResponderCaricia()
         {
             throw new NotImplementedException();
+        }
+
+        public void MoverLaCola()
+        {
+            Console.WriteLine($"{this.Name} está moviendo la cola");
+        }
+
+        public void Grunir()
+        {
+            Console.WriteLine($"{this.Name} está gruñendo");
         }
     }
 }
