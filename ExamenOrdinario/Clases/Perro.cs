@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ExamenOrdinario.Clases
 {
-    public class Perro : IMascota
+    public class Perro : IMascota, IAcariciable
     {
         public string ID => throw new NotImplementedException();
 
