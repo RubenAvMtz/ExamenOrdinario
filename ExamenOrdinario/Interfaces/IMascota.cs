@@ -20,7 +20,10 @@ namespace ExamenOrdinario.Interfaces
         {
             get;
         }
-
+        public string Temperamento
+        {
+            get; set;
+        }
 
 
     }
