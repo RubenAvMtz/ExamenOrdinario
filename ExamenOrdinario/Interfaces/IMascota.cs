@@ -16,6 +16,10 @@ namespace ExamenOrdinario.Interfaces
         {
             get; set;
         }
+        public int Edad
+        {
+            get;
+        }
 
 
 
